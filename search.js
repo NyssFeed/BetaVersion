@@ -1,7 +1,7 @@
 function search() { 
     let input = document.getElementById('searchbar').value 
         input=input.toLowerCase(); 
-    let x = document.getElementsByTagName("h1"); 
+    let x = document.getElementsByTagName("h6"); 
     let y = document.getElementsByClassName('a'); 
       
     for (i = 0; i < x.length; i++) {  
