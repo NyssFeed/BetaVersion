@@ -10,7 +10,7 @@
   	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
 
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="1.css">
 </head>
 <body>
 
@@ -20,10 +20,10 @@
 
 <div class="smenu">
 
-  <h2><a href="index.html">NyssFeed</a></h2>
+  <h2><a href="../../index.html">NyssFeed</a></h2>
 
     <ul class="submenu">
-        <li class="active"><a href="index.html">HOME</a></li>
+        <li><a href="../../index.html">HOME</a></li>
         <li><a href="#">CATEGORIES</a>
         	<ul> <!-- SUBMENU -->
             	<li><a href='#'>ANIME</a></li>
@@ -31,7 +31,7 @@
                 <li><a href='#'>ELECTRONICS</a></li>
                 <li><a href='#'>MOVIES</a></li>
                 <li><a href='#'>TV SHOWS</a></li>
-                <li><a href='articles/example/1.html'>OTHERS</a></li>
+                <li><a href='1.html'>OTHERS</a></li>
             </ul>
         </li>
         <li><a href="#">ABOUT</a></li>
@@ -62,46 +62,44 @@
 <!-------------------- MENU BAR - ENDS -------------------->
 
 
-<!-- Fixed -->
-
-<div class="fixed">
-
-	<h1><br>WELCOME TO NYSSFEED</h1>
-	<p>
-		Hello And Welcome To NyssFeed. Our Goal Is To Help People Find What They're Looking For.
-		From Book Reviews To Smartphones, Whatever You're Looking For You'll Find It Here.<br><br>
-		Choose From Different Categories Or Scroll Down For Recommended Articles.
-	</p>
-
-	<!--<button class="clear" onclick="document.getElementById('searchbar').value =''">X</button>-->
-
-</div>
-
-
 <!-- Scroll White -->
 
 <div class="swhite">
 
-	<h3>Articles You'll Love</h3>
+	<h3>HEADING</h3>
+
+	<!-- Check Box-->
+	<input id="check02" type="checkbox" name="searchbox" />
+	<label class="sb" for="check02"><img src="../../IMG/s1.png"></label>
+
+	<!-- Search Bar-->
+	<input id="searchbar" onkeyup="search()" type="text" name="search" placeholder="search" />
 
 	<ul id='list'>
     	<li class="s"><div>
-        	<h6>The Silent Patient ~ Book Review</h6><br>
-       	 	<a href="#"><img src="IMG/1x.jpeg"></a>
-       		<p>Five fatal gunshots. Six years of silence. What are her first words? [..]</p>
+        	<h6>ARTICLE HEADING 1</h6><br>
+       	 	<a href="#"><img src=""></a>
+       		<p>Description [..]</p>
        		<br>
    	 	</div></li> 
 
    	 	<li class="s"><div>
-   	    	<h6>The Lost Fragrance ~ Book Review</h6><br>
-   	    	<a href="#"><img src="IMG/2x.jpg"></a>
+   	    	<h6>ARTICLE HEADING 2</h6><br>
+   	    	<a href="#"><img src=""></a>
    	    	<p>Description [..]</p>
    	    	<br>        
     	</div></li> 
 
    	 	<li class="s"><div>
-   	    	<h6>The Man From St Petersburg ~<br>Book Review</h6><br>
-   	    	<a href="#"><img src="IMG/3s.jpg"></a>
+   	    	<h6>ARTICLE HEADING 3</h6><br>
+   	    	<a href="#"><img src=""></a>
+   	    	<p>Description [..]</p>
+   	    	<br>        
+    	</div></li> 
+
+   	 	<li class="s"><div>
+   	    	<h6>ARTICLE HEADING 4</h6><br>
+   	    	<a href="#"><img src=""></a>
    	    	<p>Description [..]</p>
    	    	<br>        
     	</div></li> 
@@ -118,6 +116,8 @@
 
 
 </div> <!-- Parallax div Ends -->
+
+<script src="search.js"></script>
 
 </body>
 </html>
